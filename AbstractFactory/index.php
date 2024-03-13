@@ -1,7 +1,7 @@
 <?php
-include './interfaces/Car.php';
+include_once './Builder/Builder.php';
 
-$factory = new CarBuilder();
+$factory = new Builder();
 $car = $factory->make('Supra');
 
 echo $car->getDetails();
